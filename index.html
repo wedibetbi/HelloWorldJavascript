@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <button id="process">GerarResultado</button>
+        <button id="clean">Recarregar tela</button>
+        <hr/>
+        <div id="result" style="width: 100%; height: 100%;"></div>
+        <script>
+            document.getElementById('process').onclick = function () {
+                document.getElementById('result').innerHTML = Activity();
+            }
+
+            document.getElementById('clean').onclick = function() {
+                window.location.reload(true);
+            }
+        </script>
+        <script>
+            function Activity() {
+                //Codigo Aqui
+                var CPF = 111444777;
+                var resultado= '3';
+                var d1, d2, d3, d4, d5, d6, d7, d8, d9;
+                d1 = CPF % 10;
+                CPF = parseInt(CPF / 10);
+                d2 = CPF % 10;
+                CPF = parseInt(CPF / 10);
+                d3 = CPF % 10;
+                CPF = parseInt(CPF / 10);
+                d4 = CPF % 10;
+                CPF = parseInt(CPF / 10);
+                d5 = CPF % 10;
+                CPF = parseInt(CPF / 10);
+                d6 = CPF % 10;
+                CPF = parseInt(CPF / 10);
+                d7 = CPF % 10;
+                CPF = parseInt(CPF / 10);
+                d8 = CPF % 10;
+                CPF = parseInt(CPF / 10);
+                d9 = CPF % 10;
+                CPF = parseInt(CPF / 10);
+                
+                d1 = d1 * 2;
+                d2 = d2 * 3;
+                d3 = d3 * 4;
+                d4 = d4 * 5;
+                d5 = d5 * 6;
+                d6 = d6 * 7;
+                d7 = d7 * 8;
+                d8 = d8 * 9;
+                d9 = d9 * 10;
+
+                var Soma;
+                Soma = d1+d2+d3+d4+d5+d6+d7+d8+d9;
+                Soma = parseInt(Soma / 11);
+                Soma = Soma % 11;
+
+                var DV1;
+                DV1 = Soma;
+
+                var resultado= '';
+                var d1, d2, d3, d4, d5, d6, d7, d8, d9, d10;
+                d1 = DV1 % 10;
+                CPF = parseInt(DV1 / 10);
+                d2 = CPF % 10;
+                CPF = parseInt(CPF / 10);
+                d3 = CPF % 10;
+                CPF = parseInt(CPF / 10);
+                d4 = CPF % 10;
+                CPF = parseInt(CPF / 10);
+                d5 = CPF % 10;
+                CPF = parseInt(CPF / 10);
+                d6 = CPF % 10;
+                CPF = parseInt(CPF / 10);
+                d7 = CPF % 10;
+                CPF = parseInt(CPF / 10);
+                d8 = CPF % 10;
+                CPF = parseInt(CPF / 10);
+                d9 = CPF % 10;
+                CPF = parseInt(CPF / 10);
+                d10 = CPF % 10;
+                CPF = parseInt(CPF / 10);
+
+                d1 = d1 * 2;
+                d2 = d2 * 3;
+                d3 = d3 * 4;
+                d4 = d4 * 5;
+                d5 = d5 * 6;
+                d6 = d6 * 7;
+                d7 = d7 * 8;
+                d8 = d8 * 9;
+                d9 = d9 * 10;
+                d10 = d10 * 11;
+
+                var Soma;
+                Soma = d1+d2+d3+d4+d5+d6+d7+d8+d9+d10;
+                Soma = 11 - Soma;
+            }
+            var CPF = "11144477735";
+         
+        </script>
+    </body>
+</html>
